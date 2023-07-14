@@ -1,0 +1,25 @@
+@import "../../sass/abstracts/variables";
+
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex-ac {
+  display: flex;
+  align-items: center;
+}
+
+%titleText {
+  font-weight: $fontSemiBold;
+  font-size: $textMedium;
+}
+
+%button {
+  border: none;
+  color: $white;
+  font-size: 16px;
+  border-radius: 5px;
+  
+}

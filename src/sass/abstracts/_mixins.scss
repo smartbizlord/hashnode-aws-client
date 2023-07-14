@@ -1,0 +1,37 @@
+@function toRem($value) {
+    $remValue: (calc($value / 16)) + rem;
+    @return $remValue;
+}
+
+// Basic mixin for only min-width without any optional arguments
+// @mixin responsive($query) {
+//     @media ( min-width:  $query ) {
+//         @content;
+//     }
+// }
+
+//  This responsive mixin accepts both min-width and max-width as optional arguments. 
+@mixin responsive($min-width: null, $max-width: null) {
+    @if $min-width {
+        // Handle the case when min-width is passed
+      @media (min-width: $min-width) {
+        @content;
+      }
+    } @else if $max-width {
+        // Handle the case when max-width is passed
+      @media (max-width: $max-width) {
+        @content;
+      }
+    } @else {
+      // Handle the case when neither min-width nor max-width is provided
+      @content;
+    }
+  }
+
+  // Note if You call the responsive mixin rule above without specifying either min-width or max-width, 
+  // it will execute as min-width by default
+  // E.g @include responsive(768px) {
+  //  Styles for min-width: 768px
+  // }
+
+  

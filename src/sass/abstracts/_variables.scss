@@ -1,0 +1,44 @@
+// Breakpoints
+$layout-breakpoint-large: 1920px;
+$layout-breakpoint-semiMedium: 1440px;
+$layout-breakpoint-medium: 960px;
+$layout-breakpoint-small: 760px;
+$layout-breakpoint-xsmall: 480px;
+
+// Colors
+$white: #fff;
+$black: #1e1d1d;
+$textColor: #aaa;
+$bodyBackground: #111; 
+
+
+
+//fontSize
+$textLarge: 2rem; //32px
+$textMedium: 1.5rem; // 24px
+$textSemiMedium: 1.125rem; // 18px
+$textBase: 1rem; // 16px
+$textSmall: 0.875rem; //14px
+$textVerySmall: 0.75rem; // 12px
+$titleSize: clamp(5rem, 10.5vw, 15rem);
+$projectTitleSize: clamp(3rem, 5.5vw, 8rem);
+$footerTitleSize: clamp(1rem, 1.5vw, 1.2rem);
+$sectionHead: clamp(5rem, 7.5vw, 7rem);
+
+//font-weight
+$fontMedium: 500;
+$fontSemiBold: 600;
+$fontBold: 700;
+
+//Btn border-radius
+$borderMedium: 0.625rem; //10px
+
+//padding
+$smallPadding: 0.625rem;
+
+//Form 
+$formBorder: #fc0202;
+
+//Button 
+$btnHeight: 3rem;
+
